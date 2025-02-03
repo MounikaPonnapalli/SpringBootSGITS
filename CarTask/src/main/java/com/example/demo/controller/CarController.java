@@ -28,6 +28,7 @@ public class CarController {
 	@PostMapping("/post")
 	public ResponseEntity<Car> saveCar(@RequestBody Car car)
 	{
+		System.out.println("Hey testing for jenkins");
 		return new ResponseEntity<Car>(carService.saveCar(car),HttpStatus.CREATED);
 	}
 	
